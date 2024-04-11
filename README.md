@@ -2,9 +2,38 @@
 
 QuintShop is a full-stack e-commerce platform featuring a Vue.js frontend and a Django backend. This project is designed to provide a comprehensive system for managing products, orders, and user interactions on an e-commerce website.
 
-## Demo
+## Quick Demo
 
+### Customer-side Views:
+<p align="center">
+<img src="imgs/customerDashboard.png" alt="alt text" width="500" style="border: 1px solid black; box-shadow: 5px 5px 5px grey;">
+</p>
 
+<p align="center">
+<img src="imgs/productDetails.png" alt="alt text" width="500" style="border: 1px solid black; box-shadow: 5px 5px 5px grey;">
+</p>
+
+<p align="center">
+<img src="imgs/placingOrder.png" alt="alt text" width="500" style="border: 1px solid black; box-shadow: 5px 5px 5px grey;">
+</p>
+
+### Admin-side Views:
+
+<p align="center">
+<img src="imgs/adminDashboard.png" alt="alt text" width="500" style="border: 1px solid black; box-shadow: 5px 5px 5px grey;">
+</p>
+
+<p align="center">
+<img src="imgs/adminOrderManage.png" alt="alt text" width="500" style="border: 1px solid black; box-shadow: 5px 5px 5px grey;">
+</p>
+
+<p align="center">
+<img src="imgs/adminProductManage.png" alt="alt text" width="500" style="border: 1px solid black; box-shadow: 5px 5px 5px grey;">
+</p>
+
+<p align="center">
+<img src="imgs/adminViewTransaction.png" alt="alt text" width="500" style="border: 1px solid black; box-shadow: 5px 5px 5px grey;">
+</p>
 
 ## Architecture Overview
 
