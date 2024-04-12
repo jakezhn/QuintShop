@@ -35,7 +35,7 @@ QuintShop is a full-stack e-commerce platform featuring a Vue.js frontend and a 
 <img src="imgs/adminViewTransaction.png" alt="alt text" width="500" style="border: 1px solid black; box-shadow: 5px 5px 5px grey;">
 </p>
 
-## Architecture Overview
+## Components Overview
 
 ### Frontend
 
