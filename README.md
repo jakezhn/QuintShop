@@ -17,6 +17,10 @@ QuintShop is a full-stack e-commerce platform featuring a Vue.js frontend and a 
 <img src="imgs/placingOrder.png" alt="alt text" width="500" style="border: 1px solid black; box-shadow: 5px 5px 5px grey;">
 </p>
 
+<p align="center">
+<img src="imgs/productListing.png" alt="alt text" width="500" style="border: 1px solid black; box-shadow: 5px 5px 5px grey;">
+</p>
+
 ### Admin-side Views:
 
 <p align="center">
@@ -46,7 +50,7 @@ The frontend of QuintShop is built with Vue.js. It uses Vue Router for app routi
   - `UserRegister.vue`: Handles new user registrations.
 
 - **Product Management:**
-  - `ViewProductList.vue`: Displays a list of products available for purchase.
+  - `ViewProductList.vue`: Displays a list of products available for purchase, enable search for products by name.
   - `ViewProductDetail.vue`: Provides detailed views of individual products, including descriptions, prices, and other relevant details.
 
 - **Order Management:**
