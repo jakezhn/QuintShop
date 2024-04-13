@@ -137,11 +137,19 @@ The backend of QuintShop is developed using Django. Here’s a breakdown of the 
    - Ensure Python is installed on your system. The backend is compatible with Python 3.6. You can download Python from [here](https://www.python.org/downloads/).
 
 2. **Setting Up the Database:**
+   - Install the MySQL database adapter for Python:
+      ```bash
+      pip install mysqlclient
+      ```
    - Make migrations and migrate the database schema under `backend\` directory with:
      ```bash
      python manage.py makemigrations
      python manage.py migrate
      ```
+    -  You can drop the database and create it again:
+        ```bash
+        python manage.py flush
+        ```
 
 4. **Running the Development Server:**
    - Start the Django development server:
