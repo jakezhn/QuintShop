@@ -58,7 +58,22 @@ class SupportTicketViewSet(viewsets.ModelViewSet):
 # Customer-Side Views
 
 # Product Browsing
+@csrf_exempt
+@require_http_methods(["GET"])
+def product_search(request):
+    search_query = request.GET.get('search', '')
+    print("Search Query Received:", search_query)
+    if search_query:
+        products = Product.objects.filter(name__icontains=search_query)
+        print("Filtered Products:", list(products.values('name')))
+    else:
+        products = Product.objects.all()
+        print("All Products")
 
+    products = products.values('id', 'name', 'price', 'description', 'category', 'image_url', 'stock_quantity', 'sales', 'is_featured')
+    return JsonResponse(list(products), safe=False)
+
+@csrf_exempt
 @require_http_methods(["GET"])
 def product_detail(request, pk):
     try:
