@@ -4,7 +4,7 @@
     <ul class="ticket-list">
       <li v-for="ticket in tickets" :key="ticket.id" class="ticket-item">
         <div class="ticket-details">
-          <p>{{ ticket.subject }} - {{ ticket.description }} - Status: {{ ticket.status }}</p>
+          <p>{{ ticket.subject }} - {{ ticket.description }} - Status: {{ ticket.status }} - Created by: {{ ticket.user__username }}</p>
           <select v-model="ticket.newStatus" @change="updateTicketStatus(ticket.id, ticket.newStatus)" class="status-dropdown">
             <option disabled value="">Change Status</option>
             <option v-for="statusOption in statusOptions" :key="statusOption" :value="statusOption">
@@ -32,6 +32,7 @@ mounted() {
   this.fetchOpenSupportTickets();
 },
 methods: {
+
   fetchOpenSupportTickets() {
     axios.get('http://localhost:8000/api/shop/admin/support_tickets/')
       .then(response => {

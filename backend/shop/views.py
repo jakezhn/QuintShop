@@ -289,16 +289,18 @@ def admin_view_orderdetials(request, order_id):
 def admin_view_tickets(request):
     if not (request.user.is_authenticated and request.user.role == 'admin'):
         return JsonResponse({'error': 'Authentication required.'}, status=401)
-    # Filter tickets by the logged-in user
-    tickets = SupportTicket.objects.order_by('creation_date').values()
+    
+    tickets = SupportTicket.objects.order_by('creation_date').select_related('user').values(
+        'id', 'subject', 'description', 'status', 'creation_date', 'resolution_date', 'user__username'
+    )
     return JsonResponse(list(tickets), safe=False)
+
 
 @csrf_exempt
 @require_http_methods(["POST"])
 def update_ticket(request, ticket_id):
     if not request.user.is_authenticated or request.user.role != 'admin':
         return JsonResponse({'error': 'Admin privileges required.'}, status=403)
-    print("i am here")
     data = json.loads(request.body)
     ticket = get_object_or_404(SupportTicket, pk=ticket_id)
     ticket.status = data['status']

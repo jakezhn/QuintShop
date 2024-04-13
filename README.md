@@ -56,7 +56,7 @@ The frontend of QuintShop is built with Vue.js. It uses Vue Router for app routi
 - **Admin Management:**
   - `AdminPage.vue`: The dashboard for administrators to oversee site operations.
   - `AdminProductManagement.vue`: Allows admins to add, edit, or remove products from the catalog.
-  - `AdminOrderManagement.vue`: Enables admins to view and manage orders placed by users, including updates on order status.
+  - `AdminOrderManagement.vue`: Enables admins to view and manage orders placed by users.
   - `AdminSupportTicketsManagement.vue`: Admin interface for managing customer support tickets.
   - `AdminTransactionsManagement.vue`: View transaction records.
 

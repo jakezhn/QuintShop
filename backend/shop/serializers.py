@@ -42,6 +42,8 @@ class TransactionSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class SupportTicketSerializer(serializers.ModelSerializer):
+    username = serializers.ReadOnlyField(source='user.username')
+
     class Meta:
         model = SupportTicket
         fields = '__all__'
