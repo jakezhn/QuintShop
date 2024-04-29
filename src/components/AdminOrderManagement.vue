@@ -73,7 +73,7 @@ export default {
       axios.post(`http://localhost:8000/api/shop/admin/orders/${this.selectedOrderId}/update_orderstatus/`, { status: this.newStatus })
         .then(() => {
           alert('Order status updated successfully');
-          this.fetchOrders(); // Optionally refresh the list or the selected order
+          window.location.reload();
         })
         .catch(error => console.error("Error updating order status:", error));
     }
