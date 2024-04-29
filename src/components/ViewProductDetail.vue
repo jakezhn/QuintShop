@@ -5,7 +5,7 @@
       <img :src="'/' + product.image_url" alt="Product Image" class="product-image" />
       <p>{{ product.description }}</p>
       <p>Price: ${{ product.price }}</p>
-      <p>Discount: {{ product.discount }}%</p>
+      <p>Discount: {{ product.discount }}</p>
       <p>Category: {{ product.category }}</p>
       <p>Stock: {{ product.stock_quantity }}</p>
       <p>Sales: {{ product.sales }}</p>
