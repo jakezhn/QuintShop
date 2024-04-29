@@ -1,6 +1,6 @@
-# QuintShop v0.1
+# TinyShop v0.1
 
-QuintShop is a full-stack e-commerce platform featuring a Vue.js frontend and a Django backend. This project is designed to provide a comprehensive system for managing products, orders, and user interactions on an e-commerce website.
+TinyShop is a full-stack e-commerce platform featuring a Vue.js frontend and a Django backend. This project is designed to provide a comprehensive system for managing products, orders, and user interactions on an e-commerce website.
 
 ## Quick Demo
 
