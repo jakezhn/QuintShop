@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>Welcome to QuintShop!</h1>
+    <h1>Welcome to TinyShop!</h1>
     <p>Discover our amazing products!</p>
 
     <div class="featured-products">
