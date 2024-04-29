@@ -154,7 +154,7 @@ def place_order(request):
                     order=order, 
                     product=product, 
                     quantity=item['quantity'], 
-                    price_at_purchase=product.price * product.discount
+                    price_at_purchase=product.price * (product.discount / 100)
                 )
                 
                 # Update product's stock_quantity and sales
