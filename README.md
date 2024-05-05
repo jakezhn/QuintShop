@@ -43,7 +43,7 @@ TinyShop is a full-stack e-commerce platform featuring a Vue.js frontend and a D
 
 ### Frontend
 
-The frontend of QuintShop is built with Vue.js. It uses Vue Router for app routing and organizes its functionality across components dedicated to different aspects of the e-commerce experience:
+The frontend of TinyShop is built with Vue.js. It uses Vue Router for app routing and organizes its functionality across components dedicated to different aspects of the e-commerce experience:
 
 * **User Authentication:**
   - `UserLogin.vue`: Manages user login processes.
@@ -72,7 +72,7 @@ The frontend of QuintShop is built with Vue.js. It uses Vue Router for app routi
 
 ### Backend
 
-The backend of QuintShop is developed using Django. Here’s a breakdown of the backend components:
+The backend of TinyShop is developed using Django. Here’s a breakdown of the backend components:
 
 - **Django Project Configuration:**
   - `backend/quintshop/settings.py`: Configuration for the Django project, including database configurations, security settings, and third-party app integrations.
